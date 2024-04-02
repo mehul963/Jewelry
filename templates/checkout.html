@@ -14,55 +14,126 @@
 </head>
 
 <body>
-    <header class="container mx-auto px-4 flex justify-between mt-2 font-poppins items-center ">
+    <header class="container mx-auto px-4 flex justify-between font-poppins items-center ">
         <a href="/"><img src="../static/img/logo.svg" class="inline mr-2" alt="" srcset=""><span
                 class="font-bold text-2xl align-middle">Jewell</span></a>
         <nav class="flex gap-2 items-center">
             <ul class="flex gap-2 align-middle">
-                <li class="px-4 font-poppins font-600"><a href="/">Home</a></li>
-                <li class="px-4 font-poppins font-600"><a href="/about.html">About</a></li>
+                <li class="px-4 font-poppins font-600"><a href="./index.html">Home</a></li>
+                <li class="px-4 font-poppins font-600"><a href="./about.html">About</a></li>
                 <li class="px-4 font-poppins font-600"><a href="#">Service</a></li>
-                <li class="px-4 font-poppins font-600"><a href="#">Catalogue</a></li>
+                <li class="px-4 font-poppins font-600"><a href="./products.html">Catalogue</a></li>
                 <li class="px-4 font-poppins font-600"><a href="#">Gifts</a></li>
             </ul>
             <div>
-                <button class="btn px-4 py-2 outline outline-1 ">Login</button>
-                <button class="btn px-4 py-2 outline outline-1 bg-white text-black">Get Started</button>
+                <a href="./login.html" class="btn px-4 py-2 outline outline-1 ">Login</a>
+                <a href="./signup.html" class="btn px-4 py-2 outline outline-1 bg-white text-black">Get Started</a>
             </div>
         </nav>
     </header>
 
     <main class="mx-auto">
-        <section class="container mt-4 mx-auto min-h-dvh">
+        <section class="container mt-4 mx-auto">
         <a href="#">BACK TO ORDER REVIEW</a>
-        <div class="grid grid-cols-2 mt-4">
+        <div class="grid grid-cols-2 gap-3 mt-4">
             <div class="mt-4">
                 <form class="max-w-2/3 mx-auto w-full">
                     <h2 class="mb-6 text-2xl border-b">My Information</h2>
                     <div class="mb-4">
-                        <input type="email" name="email" placeholder="Email address" class="px-2 py-2 mt-1 block w-full text-black">
+                        <input type="email" name="email" placeholder="Email address" class="px-2 py-2 mt-1 block w-full bg-transparent border-b">
                     </div>
                     <div class="mb-4">
-                        <input type="tel" name="phonenumber" placeholder="Phone Number" class="px-2 py-2 mt-1 block w-full text-black">
+                        <input type="tel" name="phonenumber" placeholder="Phone Number" class="px-2 py-2 mt-1 block w-full bg-transparent border-b">
                     </div>
                     <div class="mb-4">
-                        <textarea name="address" id="" cols="auto" rows="" placeholder="Address" class="form-textarea mt-1 block w-full text-black"></textarea>
+                        <textarea name="address" id="" cols="auto" rows="5" placeholder="Address"  class="form-textarea mt-1 block bg-transparent border w-full"></textarea>
                     </div>
                     <div class="mb-4 mt-1 flex gap-2">
-                        <input type="text" name="city" placeholder="City" class="px-1 py-2 text-black">
-                        <input type="text" name="state" placeholder="State" class="px-1 py-2 text-black">
-                        <input type="text" name="zip-code" placeholder="Zip Code" class="px-1 py-2 text-black">
+                        <input type="text" name="city" placeholder="City" class="px-1 py-2 bg-transparent border-b">
+                        <input type="text" name="state" placeholder="State" class="px-1 py-2 bg-transparent border-b">
+                        <input type="text" name="zip-code" placeholder="Zip Code" class="px-1 py-2 bg-transparent border-b">
                     </div>
                 </form>
             </div>
+            <div class="mt4">
+                <div class="m-6 flex flex-col justify-center border">
+                    <p class='text-center text-xl py-2 m-4 border-b'>Order Total</p>
+                    <div class="flex justify-around">
+                        <span>Subtotal</span>
+                        <span>$100.00</span>
+                    </div>
+                    <div class="flex justify-around">
+                        <span>Shipping</span>
+                        <span>$4.50</span>
+                    </div>
+                    <div class="flex justify-around">
+                        <span>Sales Tax</span>
+                        <span>$5.00</span>
+                    </div>
+                    <div class="flex justify-around m-4 border-t">
+                        <span>Total</span>
+                        <span>$109.50</span>
+                    </div>
+                    <button class="bg-white text-black m-4 py-2">PURCHASE</button>
+                </div>
+            </div>
         </div>
-        
-            
+        </section>
+
+        <section class="container mt-4 mx-auto">
+            <div class="grid grid-cols-2 gap-3 mt-4">
+                <div>
+                    <div class="mt-4">
+                        <p class="mb-6 text-2xl border-b">How would you like to receive your order?</p>
+                        <div class="flex gap-5">
+                            <div class="mb-3">
+                                <input type="radio" name="receive" id="By shipment">
+                                <label for="By shipment">By shipment</label>
+                            </div>
+                            <div class="mb-3 ">
+                                <input type="radio" name="receive" id="In person">
+                                <label for="In person">In person</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="mb-6 text-2xl border-b">Pickup Location</p>
+                        <div>
+                            <div class="flex gap-2 place-items-baseline">
+                                <input type="radio" name="address" id="1" class="inline">
+                                <label for="1">
+                                    <p class="inline">MARIGOLD MALL</p>
+                                    <p class="">13 Greenleaf Ave</p>
+                                    <p class="">New York, NY 12345</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="mb-6 text-2xl border-b">Billing Information</p>
+                        <div>
+                            <div class="mb-4">
+                                <input type="text" name="nameofcard" placeholder="Name of card" class="px-2 py-2 mt-1 block w-full bg-transparent border-b">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" name="card-number" placeholder="Debit / Credit Card Number" class="px-2 py-2 mt-1 block w-full bg-transparent border-b">
+                            </div>
+                            <div class="mb-4 mt-1 flex gap-2">
+                                <input type="date" name="expiry-date" placeholder="Expiry date" class="px-1 py-2 bg-transparent border-b">
+                                <input type="text" name="state" placeholder="CVV" class="px-1 py-2 bg-transparent border-b">
+                                <input type="text" name="zip-code" placeholder="Zip Code" class="px-1 py-2 bg-transparent border-b">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
 
     </main>
     <footer class="bg-[url('../static/img/footer-background.png')] bg-no-repeat">
-        <header class="grid grid-cols-4 mx-28">
+        <header class="grid grid-cols-1 md:grid-cols-4 mx-28">
             <nav>
                 <p class="mb-2 font-900 font-nato">Product</p>
                 <ul>
