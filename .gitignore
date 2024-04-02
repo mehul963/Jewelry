@@ -1,0 +1,9 @@
+# Node.js dependencies
+node_modules/
+
+# npm debugging logs
+npm-debug.log*
+
+# Tailwind CSS build output
+/dist/
+/build/
